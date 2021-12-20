@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 612 792">
+                    <style>
+                        .st1,.st2{stroke-width:4}.st1,.st2,.st4{stroke-miterlimit:10}.st1{fill:#fff;stroke:#000}.st2,.st4{stroke:#050606}.st4{fill:none;stroke-width:.5}
+                    </style>
+                    <g id="XMLID_4_">
+                        <path id="XMLID_3_" d="M274 299v63" class="st1"/>
+                        <ellipse id="XMLID_5_" cx="263.6" cy="364.8" class="st2" rx="12.6" ry="8.8" transform="rotate(140 264 365)"/>
+                    </g>
+                    <g id="XMLID_7_">
+                        <path id="XMLID_9_" d="M315 297v47" class="st1"/>
+                        <ellipse id="XMLID_8_" cx="306.8" cy="346.1" class="st2" rx="9.3" ry="6.5" transform="rotate(140 307 346)"/>
+                    </g>
+                    <path id="XMLID_10_" d="M274 325h40" class="st2"/>
+                    <path id="XMLID_11_" d="M284 301v-2 15" class="st2"/>
+                    <path id="XMLID_13_" d="M295 301v-2 15" class="st2"/>
+                    <path id="XMLID_14_" d="M305 301v-2 15" class="st2"/>
+                    <path id="XMLID_12_" fill="none" stroke="#050606" stroke-miterlimit="10" stroke-width="4" d="M272 299h45"/>
+                    <path id="XMLID_17_" d="M284 314v10" class="st4"/>
+                    <path id="XMLID_18_" d="M295 314v10" class="st4"/>
+                    <path id="XMLID_19_" d="M305 313v11" class="st4"/>
+                </svg>

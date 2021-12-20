@@ -1,15 +1,54 @@
 import React from 'react'
-import { View, Text,StyleSheet ,Pressable, Button } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Scan from './scan';
-import Input from './input';
-import Upload from './upload';
-import { LinearGradient } from 'expo-linear-gradient';
+import { View, Text,StyleSheet ,Pressable, Button,Image  } from 'react-native'
+
+import AppLoading from 'expo-app-loading';
+import { useFonts } from 'expo-font';
+import { 
+    Montserrat_100Thin,
+    Montserrat_100Thin_Italic,
+    Montserrat_200ExtraLight,
+    Montserrat_200ExtraLight_Italic,
+    Montserrat_300Light,
+    Montserrat_300Light_Italic,
+    Montserrat_400Regular,
+    Montserrat_400Regular_Italic,
+    Montserrat_500Medium,
+    Montserrat_500Medium_Italic,
+    Montserrat_600SemiBold,
+    Montserrat_600SemiBold_Italic,
+    Montserrat_700Bold,
+    Montserrat_700Bold_Italic,
+    Montserrat_800ExtraBold,
+    Montserrat_800ExtraBold_Italic,
+    Montserrat_900Black,
+    Montserrat_900Black_Italic 
+  } from '@expo-google-fonts/montserrat'
 
 
 export default function Home({ navigation }) {
-   
+    let [fontsLoaded, error]= useFonts({
+        Montserrat_100Thin,
+        Montserrat_100Thin_Italic,
+        Montserrat_200ExtraLight,
+        Montserrat_200ExtraLight_Italic,
+        Montserrat_300Light,
+        Montserrat_300Light_Italic,
+        Montserrat_400Regular,
+        Montserrat_400Regular_Italic,
+        Montserrat_500Medium,
+        Montserrat_500Medium_Italic,
+        Montserrat_600SemiBold,
+        Montserrat_600SemiBold_Italic,
+        Montserrat_700Bold,
+        Montserrat_700Bold_Italic,
+        Montserrat_800ExtraBold,
+        Montserrat_800ExtraBold_Italic,
+        Montserrat_900Black,
+        Montserrat_900Black_Italic 
+    });
+    if (!fontsLoaded){
+        return <AppLoading />
+    }
     return (
         <View >
            
@@ -20,6 +59,7 @@ export default function Home({ navigation }) {
             <Button style={styles.butt} title="Upload" onPress={() => navigation.navigate('Upload')} /> */}
             <View style={styles.buttonContainer}>
                 <Pressable style={styles.button} onPress={() => navigation.navigate('Scan')}>
+                    
                     <Text style={styles.text}>Scan</Text>
                 </Pressable>  
                 <Pressable style={styles.button} onPress={() => navigation.navigate('Input')}>
@@ -37,23 +77,36 @@ const styles = StyleSheet.create({
     button: {
         display:'flex',
         backgroundColor:'#A9A9B0',
-        margin:50,
+        margin:20,
         elevation:20,
         borderRadius:50,
-        paddingVertical:20,
+        paddingVertical:10,
         justifyContent:'space-between',
-       
+        position:'relative',
+        
+    },
+    logos:{
+        position:'absolute',
+        
     },
    
-    
+    image:{
+        height:50
+    },
     buttonContainer:{
-        
-        
+           
+      marginVertical:200
+       
+   
 
         
     },
     text:{
         textAlign:'center',
+        fontSize:20,
+        fontFamily:'Montserrat_500Medium',
+        color:'#171717'
+        
     }
     
   });

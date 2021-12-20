@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text,StyleSheet } from 'react-native'
+import { View, Text,StyleSheet, Image } from 'react-native'
 import { StatusBar } from 'expo-status-bar';
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
@@ -23,9 +23,12 @@ export default function Header() {
     }
     return (
         <View style={styles.container}>
-            <Text style={styles.logo}>logo</Text>
-            <Text style={styles.text}>Smart Music</Text>
-            <Text style={styles.zero}>zero</Text>
+            {/* <Text style={styles.logo}>logo</Text> */}
+            <Text style={styles.text}>
+                {/* <Image source={require('../assets/svg/logo.svg')}/> */}
+                Smart Music
+            </Text>
+            
             <StatusBar style="dark" backgroundColor= '#32243d'  />
         </View>
                 )
@@ -37,7 +40,7 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         width: '100%',
         height: '100%',
-        justifyContent:'space-between',
+        justifyContent:'space-around',
         resizeMode: 'contain',
       
     },
@@ -47,15 +50,16 @@ const styles = StyleSheet.create({
        fontFamily:'DancingScript_600SemiBold',      
        fontSize:30, 
        color:'#F9F5EC',
-       width:'50%',
+       width:'100%',
        textAlign:'center' ,
-       alignItems:'center'
+       alignItems:'center',
+       textAlign:'center'
 
 
  
     },
     logo: {
-           
+          
     },
     zero: {
         opacity:0       
