@@ -29,7 +29,7 @@ export default function Header() {
                 Smart Music
             </Text>
             
-            <StatusBar style="dark" backgroundColor= '#32243d'  />
+            <StatusBar style="light" backgroundColor= '#32243d'  />
         </View>
                 )
             }            
@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
         height: '100%',
         justifyContent:'space-around',
         resizeMode: 'contain',
+        
       
     },
     text: {
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
        width:'100%',
        textAlign:'center' ,
        alignItems:'center',
-       textAlign:'center'
+       textAlign:'center',
 
 
  

@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import {NavigationContainer,DefaultTheme} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+
 import { StyleSheet, Text, View } from 'react-native';
 import Home from './Pages/Home'
 import Input from './Pages/input'
@@ -19,6 +20,7 @@ const MyTheme = {
     
   },
 };
+
 export default function App() {
   return (
     
@@ -41,6 +43,7 @@ export default function App() {
               <stack.Screen name="Scan" component={Scan} options={{ headerTitle: props => <Header {...props} /> }} />
               <stack.Screen name="Input" component={Input} options={{ headerTitle: props => <Header {...props} /> }} />
           </stack.Navigator>
+         
       </NavigationContainer>
     
   );
