@@ -3,6 +3,7 @@ import { View, Text,StyleSheet ,Pressable, Button,Image  } from 'react-native'
 
 import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
+import { Ionicons } from '@expo/vector-icons';
 import { 
     Montserrat_100Thin,
     Montserrat_100Thin_Italic,
@@ -59,13 +60,16 @@ export default function Home({ navigation }) {
             <Button style={styles.butt} title="Upload" onPress={() => navigation.navigate('Upload')} /> */}
             <View style={styles.buttonContainer}>
                 <Pressable style={styles.button} onPress={() => navigation.navigate('Scan')}>
-                    
+                    <Ionicons style={styles.icon} name="camera-outline" size={40} color="#171717" />
                     <Text style={styles.text}>Scan</Text>
                 </Pressable>  
                 <Pressable style={styles.button} onPress={() => navigation.navigate('Input')}>
+                    <Ionicons name="clipboard-outline" style={styles.icon} size={40} color="#171717"/>
                     <Text style={styles.text}>Input</Text>
                 </Pressable>  
                 <Pressable style={styles.button} onPress={() => navigation.navigate('Upload')}>
+                
+                    <Ionicons name="cloud-upload-outline" style={styles.icon} size={40} color="#171717"/>
                     <Text style={styles.text}>Upload</Text>
                 </Pressable> 
             </View> 
@@ -85,8 +89,10 @@ const styles = StyleSheet.create({
         position:'relative',
         
     },
-    logos:{
+    icon:{
         position:'absolute',
+        left:15,
+        top:0,
         
     },
    
